@@ -42,6 +42,7 @@ export const ChatMessage = ({
           style={{
             borderRadius: "50%",
             border: `solid 1px ${tokens.backgroundRoot}`,
+            overflow: "hidden",
           }}
         />
         <Text>{username}</Text>

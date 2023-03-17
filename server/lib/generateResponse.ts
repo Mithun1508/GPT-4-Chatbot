@@ -11,8 +11,8 @@ const generateResponse = async ({
   prompt: string;
   apiKey?: string;
 }) => {
-  if (promptText.length > 1024) {
-    return "Your prompt is too long.  Please reword it to be under 1024 characters.";
+  if (promptText.length > 512) {
+    return "Your prompt is too long.  Please reword it to be under 512 characters.";
   }
 
   if (!promptText || promptText.length === 0) {
@@ -24,6 +24,7 @@ const generateResponse = async ({
       temperature: 0,
       openAIApiKey: apiKey || process.env.OPENAI_API_KEY,
       modelName: "gpt-4",
+      maxRetries: 3,
     });
     const prompt = new PromptTemplate({
       template: basePrompt,
