@@ -13,7 +13,7 @@ export default function Login() {
   const [inIframe, setInIframe] = useState(false);
   const authorize = () => {
     if (inIframe) {
-      window.open("https://ai.repl.page", "_blank");
+      window.open("https://gpt4.repl.page", "_blank");
       return;
     }
     window.addEventListener("message", authComplete);
