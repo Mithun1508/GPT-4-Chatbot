@@ -4,7 +4,7 @@ A chatbot that runs on GPT-4, built with Langchain and Next.js.  This is a simil
 
 # Quota & Limits
 
-By default, all users get a total of 25 responses.  After you've used up the 25 responses, you must add your own OpenAI API key (Open the settings tab) or [tip this Repl](https://gpt4.repl.page/__repl) to increase your quota.
+By default, all users get a total of 15 responses.  After you've used up the 15 responses, you must add your own OpenAI API key (Open the settings tab) or [tip this Repl](https://gpt4.repl.page/__repl) to increase your quota.
 
 One response is one question asked followed by one answer from the chatbot.  Your quota will not be measured in tokens or response length.
 

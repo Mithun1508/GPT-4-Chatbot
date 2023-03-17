@@ -14,23 +14,9 @@ export default async function calculateQuota(req: NextApiRequest) {
     username,
   });
   if (quota) {
-    const gqlReq = await gql.raw({
-      query: `query repl($id: String!) {
-        repl(id: $id) {
-          ...on Repl {
-            topTippers {
-              user {
-                username
-              }
-              totalCyclesTipped
-            }
-          }
-        }
-      }`,
-      variables: {
-        id: process.env.REPL_ID,
-      },
-    });
+    const gqlReq = await fetch(
+      "https://tipcount.replitironclad.repl.co/res.json"
+    ).then((r) => r.json());
     if (quota) {
       usage = quota.responseCount;
     }
