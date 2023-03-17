@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/lioshi.min.css');
+
+:root, .replit-ui-theme-root {
+  --background-root: #1f2123 !important;
+  --background-default: #343541 !important;
+  --background-higher: #40414f !important;
+  --background-highest: #56586a !important;
+  --background-overlay: #0e1525a0 !important;
+  --foreground-default: #f5f9fc !important;
+  --foreground-dimmer: #c2c8cc !important;
+  --foreground-dimmest: #9da2a6 !important;
+  --outline-dimmest: #2b3245 !important;
+  --outline-dimmer: #3c445c !important;
+  --outline-default: #4e5569 !important;
+  --outline-stronger: #5f677a !important;
+  --outline-strongest: #70788c !important;
+  --accent-primary-dimmest: #2a7e6e !important;
+  --accent-primary-dimmer: #1e8c77 !important;
+  --accent-primary-default: #11a37f !important;
+  --accent-primary-stronger: #5cbba1 !important;
+  --accent-primary-strongest: #97d2c2 !important;
+  --accent-positive-dimmest: #044a10 !important;
+  --accent-positive-dimmer: #046113 !important;
+  --accent-positive-default: #009118 !important;
+  --accent-positive-stronger: #6cd97e !important;
+  --accent-positive-strongest: #bfffca !important;
+  --accent-negative-dimmest: #660000 !important;
+  --accent-negative-dimmer: #a60808 !important;
+  --accent-negative-default: #e52222 !important;
+  --accent-negative-stronger: #ff6666 !important;
+  --accent-negative-strongest: #ffcfcf !important;
+  --accent-red-dimmest: #660000 !important;
+  --accent-red-dimmer: #a60808 !important;
+  --accent-red-default: #e52222 !important;
+  --accent-red-stronger: #ff6666 !important;
+  --accent-red-strongest: #ffcfcf !important;
+  --accent-orange-dimmest: #542a00 !important;
+  --accent-orange-dimmer: #703800 !important;
+  --accent-orange-default: #ad5700 !important;
+  --accent-orange-stronger: #d4781c !important;
+  --accent-orange-strongest: #ffbd7a !important;
+  --accent-yellow-dimmest: #4d4000 !important;
+  --accent-yellow-dimmer: #635300 !important;
+  --accent-yellow-default: #967d00 !important;
+  --accent-yellow-stronger: #bfa730 !important;
+  --accent-yellow-strongest: #f2e088 !important;
+  --accent-lime-dimmest: #314a00 !important;
+  --accent-lime-dimmer: #3d5c00 !important;
+  --accent-lime-default: #5a8700 !important;
+  --accent-lime-stronger: #87b825 !important;
+  --accent-lime-strongest: #c4e581 !important;
+  --accent-green-dimmest: #044a10 !important;
+  --accent-green-dimmer: #046113 !important;
+  --accent-green-default: #009118 !important;
+  --accent-green-stronger: #6cd97e !important;
+  --accent-green-strongest: #7aeb8d !important;
+  --accent-teal-dimmest: #004452 !important;
+  --accent-teal-dimmer: #006073 !important;
+  --accent-teal-default: #0093b0 !important;
+  --accent-teal-stronger: #27b9d6 !important;
+  --accent-teal-strongest: #69d9f0 !important;
+  --accent-blue-dimmest: #004182 !important;
+  --accent-blue-dimmer: #0053a6 !important;
+  --accent-blue-default: #0079f2 !important;
+  --accent-blue-stronger: #57abff !important;
+  --accent-blue-strongest: #b2d9ff !important;
+  --accent-blurple-dimmest: #39298a !important;
+  --accent-blurple-dimmer: #5239cc !important;
+  --accent-blurple-default: #795eff !important;
+  --accent-blurple-stronger: #a694ff !important;
+  --accent-blurple-strongest: #cec4ff !important;
+  --accent-purple-dimmest: #582987 !important;
+  --accent-purple-dimmer: #7633b8 !important;
+  --accent-purple-default: #a64dff !important;
+  --accent-purple-stronger: #c78fff !important;
+  --accent-purple-strongest: #e2c4ff !important;
+  --accent-magenta-dimmest: #6b1a6b !important;
+  --accent-magenta-dimmer: #8a218a !important;
+  --accent-magenta-default: #c73ac7 !important;
+  --accent-magenta-stronger: #f562f5 !important;
+  --accent-magenta-strongest: #ffbfff !important;
+  --accent-pink-dimmest: #6e1b52 !important;
+  --accent-pink-dimmer: #8f226b !important;
+  --accent-pink-default: #d4359f !important;
+  --accent-pink-stronger: #ff70cf !important;
+  --accent-pink-strongest: #ffbae8 !important;
+  --accent-grey-dimmest: #404040 !important;
+  --accent-grey-dimmer: #545454 !important;
+  --accent-grey-default: #808080 !important;
+  --accent-grey-stronger: #a6a6a6 !important;
+  --accent-grey-strongest: #d4d4d4 !important;
+  --accent-brown-dimmest: #594031 !important;
+  --accent-brown-dimmer: #75503b !important;
+  --accent-brown-default: #a3765c !important;
+  --accent-brown-stronger: #d49877 !important;
+  --accent-brown-strongest: #ffc8a8 !important;
+  --black: #0e1525 !important;
+  --white: #fcfcfc !important;
+  --border-radius-1: 1px;
+  --border-radius-2: 2px;
+  --border-radius-4: 4px;
+  --border-radius-8: 8px;
+  --border-radius-12: 12px;
+  --border-radius-16: 16px;
+  --border-radius-default: var(--border-radius-8);
+  --border-radius-round: 1028px;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-128: 128px;
+  --space-256: 256px;
+  --space-default: var(--space-8);
+  --shadow-1: 0px 4px 8px 0px rgba(2, 2, 3, 0.16);
+  --shadow-2: 0px 8px 16px 0px rgba(2, 2, 3, 0.32);
+  --shadow-3: 0px 16px 32px 0px rgba(2, 2, 3, 0.48);
+  --shadow-default: var(--shadow-1);
+  --font-family-default: "IBM Plex Sans", sans-serif;
+  --font-family-code: "ReplitHack", monospace;
+  --font-size-small: 12px;
+  --line-height-small: 1.5;
+  --font-size-default: 14px;
+  --line-height-default: 1.6;
+  --font-size-subhead-default: 16px;
+  --line-height-subhead-default: 1.375;
+  --font-size-subhead-big: 20px;
+  --line-height-subhead-big: 1.4;
+  --font-size-header-default: 24px;
+  --line-height-header-default: 1.333;
+  --font-size-header-big: 32px;
+  --line-height-header-big: 1.25;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --transition-duration-snappy: 120ms;
+  --transition-timing-function-snappy: ease-out;
+  --transition-duration-chill: 300ms;
+  --transition-timing-function-chill: ease-in-out;
+  --border-width-default: 1px;
+  --single-line: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--background-root);
+  font-family: var(--font-family-default);
+  color: var(--foreground-default);
+}
+
+textarea {
+  resize: vertical;
+}
+
+a {
+  color: var(--accent-primary-stronger);
+  text-decoration: none;
+}
+
+.replit-ui-theme-root {
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.markdown {
+  & > * {
+    margin-bottom: 8px;
+  }
+
+  & > *:last-child {
+    margin-bottom: 0px;
+  }
+
+  & pre {
+    background: var(--background-overlay);
+    padding: 4px 8px;
+    border-radius: 8px;
+  }
+
+  & code {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-family: 'Monaco', monospace
+  }
+
+  & pre > code {
+    background: transparent;
+    padding: 0 0;
+  }
+
+  & ul, ol {
+    padding-left: 24px;
+  }
+
+  & strong {
+    color: var(--foreground-default);
+  }
+
+  & table {
+    background: var(--background-overlay);
+    border-radius: 8px;
+    table-layout: fixed;
+    cell-spacing: 0;
+    border-collapse: collapse;
+    overflow: hidden;
+    border: solid 1px var(--background-highest);
+    & tr {
+      display: flex;
+      & td, & th {
+        flex: 1 1 0;
+        width: 100%;
+        padding: 4px 8px;
+        border: solid 1px var(--background-highest);
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+hr {
+  border: none;
+  border-top: solid 2px var(--background-highest);
+}
