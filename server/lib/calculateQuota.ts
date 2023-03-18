@@ -24,7 +24,7 @@ export default async function calculateQuota(req: NextApiRequest) {
       const tips = gqlReq.data.repl.topTippers;
       const tipsByUser = tips.find((x) => x.user.username === username);
       if (tipsByUser) {
-        total += Math.floor(tipsByUser.totalCyclesTipped / 4);
+        total += Math.floor(tipsByUser.totalCyclesTipped / 5);
       }
     }
 
