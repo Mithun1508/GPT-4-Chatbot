@@ -1,4 +1,5 @@
 # GPT-4 AI Chatbot
+![ChatBot](https://a11ybadges.com/badge?logo=chatbot)
 
 A chatbot that runs on GPT-4, built with Langchain and Next.js.  This is a similar project to [AmjadGPT](https://ai.repl.page), except for the fact that it runs on GPT-4 and has no training data.
 
